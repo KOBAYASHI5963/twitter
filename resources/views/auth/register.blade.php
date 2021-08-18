@@ -9,6 +9,7 @@
         <div class="col-sm-6 offset-sm-3">
 
             <form method="POST" action="{{ route('signup.post') }}">
+            @csrf
             <div class="form-group row">
                   <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
@@ -48,6 +49,7 @@
                          </button>
                       </div>
             </div>
+            </form>
 
         </div>
     </div>

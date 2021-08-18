@@ -9,6 +9,7 @@
         <div class="col-sm-6 offset-sm-3">
 
         <form method="POST" action="{{ route('login') }}">
+        @csrf
         <div class="form-group row">
                   <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
@@ -32,8 +33,7 @@
                                 </button>
                                 </div>
             </div>
-            
-            <p class="mt-2"><a href="{{ route('signup.get') }}">Sign up now!</a></p>
+            </form>
         </div>
     </div>
 @endsection
